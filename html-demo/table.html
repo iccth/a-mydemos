@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/global.css">
+</head>
+
+<body>
+    <div>
+        <table>
+            ... ...
+        </table>
+
+        <hr />
+        <table>
+            <caption>示例表格</caption>
+        </table>
+
+        <hr />
+        <table>
+            <!-- 表头 -->
+            <thead>
+                <colgroup>
+                    <col class="c1">
+                    <col class="c2" span="2">
+                    <col class="c3">
+                </colgroup>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>4</tr>
+                <tr>5</tr>
+            </thead>
+            <!-- 表体 -->
+            <tbody>b</tbody>
+            <!-- 表尾 -->
+            <tfoot>c</tfoot>
+        </table>
+
+        <hr />
+        <table>
+            <colgroup>
+                <col class="c1">
+                <col class="c2" span="2">
+                <col class="c3">
+            </colgroup>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </table>
+
+        <hr />
+        <p>&lt;th&gt;是标题单元格，&lt;td&gt;是数据单元格</p>
+        <table>
+            <tr>
+                <th id="no">学号</th>
+                <th id="names">姓名</th>
+            </tr>
+            <tr>
+                <td headers="no">001</td>
+                <td headers="names">张三</td>
+            </tr>
+            <tr>
+                <td headers="no">002</td>
+                <td headers="names">李四</td>
+            </tr>
+        </table>
+
+        <hr />
+        <p>colspan属性和rowspan属性</p>
+        <table>
+            <tr>
+                <td colspan="2">A</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+        </table>
+
+        <hr />
+        <p>scope属性</p>
+        <table>
+            <tr>
+                <th scope="col">姓名</th>
+                <th scope="col">学号</th>
+                <th scope="col">性别</th>
+            </tr>
+            <tr>
+                <th scope="row">张三</th>
+                <td>001</td>
+                <td>男</td>
+            </tr>
+            <tr>
+                <th scope="row">李四</th>
+                <td>002</td>
+                <td>男</td>
+            </tr>
+        </table>
+
+        <hr />
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">海报名称</th>
+                    <th scope="col">颜色</th>
+                    <th colspan="3" scope="colgroup">尺寸</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Zodiac</th>
+                    <th scope="row">Full color</th>
+                    <td>A2</td>
+                    <td>A3</td>
+                    <td>A4</td>
+                </tr>
+                <tr>
+                    <th scope="row">Black and white</th>
+                    <td>A1</td>
+                    <td>A2</td>
+                    <td>A3</td>
+                </tr>
+                <tr>
+                    <th scope="row">Sepia</th>
+                    <td>A3</td>
+                    <td>A4</td>
+                    <td>A5</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
