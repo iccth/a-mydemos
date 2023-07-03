@@ -1,0 +1,18 @@
+{
+  "name": "npm-demo",
+  "version": "1.0.0",
+  "description": "20230703-095541",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "[\"javascript\"",
+    "\"html\"]"
+  ],
+  "author": "ogren",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.7.0"
+  }
+}
